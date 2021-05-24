@@ -1,0 +1,29 @@
+.navbar-light.navbar-nav.nav-link.nav-phone-number {
+  color: #27AAE1;
+}
+
+.container-fluid.landing-container {
+  color: white;
+  height: 90vh;
+  border: 2px solid red;
+}
+.mh-100 {
+  outline: 2px solid green;
+}
+
+.col-sm-6.quote-form {
+  background: transparent
+    linear-gradient(
+      144deg,
+      var(--unnamed-color-8dc63f) 0%,
+      var(--unnamed-color-27aae1) 100%
+    )
+    0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(144deg, #8dc63f 0%, #27aae1 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.background-image {
+  background-image: url("../images/HeaderImage@2x.png");
+  background-size: cover;
+}

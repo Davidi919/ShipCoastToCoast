@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta charset="UTF-8">
   <!-- Latest Bootstrap Stylesheet Link - v5.0  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!-- Latest compiled JavaScript - v5.0
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+  <!-- local stylesheet reference -->
+  <link href="style/style.css" rel="stylesheet">
+  <!-- setting viewport to full scale for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- SEO and title info -->
   <title>Ship Coast To Coast</title>
@@ -52,39 +54,26 @@
       </button>
 
       <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+      <div class="collapse navbar-collapse justify-content-center " id="navbar">
         <!-- Left links -->
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <ul class="navbar-nav mb-2 mb-lg-0 text-capitalize h-100 align-items-center">
+          <li class="navbar-brand ms-1">
+            <img src="images/Logo.svg" alt="Ship Coast To Coast Logo" height="70">
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item ms-1">
+            <a class="nav-link fw-bold" href="#">car shipping services</a>
           </li>
-          <!-- Navbar dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <!-- Dropdown menu -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="#">Action</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another action</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
+          <li class="nav-item ms-1">
+            <a class="nav-link fw-bold" href="#">specialty shipping</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <li class="nav-item ms-1">
+            <a class="nav-link fw-bold" href="#">auto transport tips</a>
+          </li>
+          <li class="nav-item ms-1">
+            <a class="nav-link fw-bold" href="#">company info</a>
+          </li>
+          <li class="display-6 nav-phone-number ms-lg-5">
+            <a class="text-decoration-none text-nowrap" href="tel:+62896706255135">866-396-1467</a>
           </li>
         </ul>
         <!-- Left links -->
@@ -95,16 +84,20 @@
   </nav>
 
 
-    <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6" style="background-color: grey;border: 5px solid red;">
-        <h1>Instantly Get 10 Free Auto Transport Quotes</h1>
-        <h2>Our network of reliable auto shipping companies are fully licensesd, bonded, and insured to protect your investment and give you peace of mind when you ship your car.</h2>
+    <div class="container-fluid landing-container --bs-white">
+    <div class="row h-100">
+      <div class="col-sm-6 background-image">
+        <div class="col-sm-12 col-lg-10 container-fluid">
+        <h1 class="display-2 fw-normal">Instantly Get <br>10  Free Auto Transport Quotes</h1>
+        <h2 class="fs-3 fw-normal lh-base">Our network of reliable auto shipping companies are fully licensesd, bonded, and insured to protect your investment and give you peace of mind when you ship your car.</h2>
+        </div>
       </div>
-      <div class="col-sm-6" style="background-color: grey;border: 5px solid red;">
-        <h1>Tell us where you're going?</h1>
+      <div class="col-sm-6 quote-form">
+        <div class="col-sm-10 container-fluid mx-auto">
+        <h1 class="display-4">Tell us where you're going?</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
       </div>
     </div>
   </div>
