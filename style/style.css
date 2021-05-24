@@ -5,7 +5,6 @@
 .container-fluid.landing-container {
   color: white;
   height: 90vh;
-  border: 2px solid red;
 }
 .mh-100 {
   outline: 2px solid green;
@@ -26,4 +25,43 @@
 .background-image {
   background-image: url("../images/HeaderImage@2x.png");
   background-size: cover;
+  background-position: center;
+}
+
+.services-descriptions {
+  margin-top: 120px;
+  color: #045E73;
+}
+
+.services-descriptions ul {
+  list-style-type: none;
+}
+
+.services-descriptions .list-group-flush {
+  padding-left: 0;
+}
+.services-descriptions .list-group-flush li{
+  border: none;
+}
+
+.services-title {
+  background-color: #F0F0F0;
+  margin-bottom: 0px;
+
+}
+
+.services-list li{
+  color: #707070;
+  background-color: #F8F8F8;
+}
+
+.services-descriptions .container {
+  margin: 0px 10px;
+  max-width: 400px;
+}
+
+.services-descriptions .services-image-container {
+  
+  width: 125px;
+  height: 125px;
 }
