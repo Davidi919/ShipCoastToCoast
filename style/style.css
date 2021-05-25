@@ -27,7 +27,9 @@
   background-size: cover;
   background-position: center;
 }
-
+.services-header {
+  color: #045E73;
+}
 .services-descriptions {
   margin-top: 120px;
   color: #045E73;
@@ -35,6 +37,8 @@
 
 .services-descriptions ul {
   list-style-type: none;
+  height: 125px;
+  
 }
 
 .services-descriptions .list-group-flush {
@@ -50,6 +54,10 @@
 
 }
 
+.services-list {
+  background-color: #F8F8F8;
+}
+
 .services-list li{
   color: #707070;
   background-color: #F8F8F8;
@@ -61,7 +69,29 @@
 }
 
 .services-descriptions .services-image-container {
-  
   width: 125px;
   height: 125px;
+}
+
+footer {
+  background-color: #045E73;
+  color: white;
+  
+}
+
+footer .footer-list .list-group-item {
+  border: none;
+  background-color: #045E73;
+  color: white;
+}
+
+footer a, footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer #copywrite-row {
+  background-color: #023D4B;
 }
