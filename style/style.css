@@ -33,6 +33,24 @@
   max-width: 750px;
 }
 
+.quote-form .progress-container strong {
+  color: #045E73;
+}
+
+#form-container input {
+  height: auto;
+}
+
+#form-container #or-divider {
+  color: #045E73;
+}
+
+#form-container .icon-offset-margin {
+  /* offset made to equal half of the "pickup icon" and half of the dashed line*/
+  margin-left: calc(21px / 2 - 1.5px);
+}
+
+
 /* removing rounded inputs from bootstrap to match design */
  #form-container .form-control {
   -webkit-border-radius: 0 !important;
