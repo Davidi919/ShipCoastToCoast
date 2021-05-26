@@ -1,7 +1,9 @@
 
-.navbar-light.navbar-nav.nav-link.nav-phone-number {
-  color: #27AAE1;
+.navbar-light .navbar-nav .nav-telephone-link {
+  color: #27aae1;
 }
+
+
 
 .container-fluid.landing-container {
   color: white;
@@ -133,4 +135,23 @@ footer .carriersoft-color {
 }
 footer #copywrite-row {
   background-color: #023D4B;
+}
+@media only screen and (max-width: 991px) {
+  #navbar-wrapper {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #navbar-wrapper {
+    width: auto !important;
+  }
+  nav .nav-bar-wrapper {
+    width: 100%;
+    
+  }
+  nav #navbarToggler {
+    max-width: max-content;
+  }
+  
 }
