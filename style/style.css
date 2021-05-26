@@ -2,7 +2,9 @@
 .navbar-light .navbar-nav .nav-telephone-link {
   color: #27aae1;
 }
-
+.navbar-light ul {
+  font-weight: 500;
+}
 
 
 .container-fluid.landing-container {
