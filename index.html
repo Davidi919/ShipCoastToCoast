@@ -45,58 +45,55 @@
 
 
   <!-- begin navigation bar / header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-    <!-- Container wrapper -->
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+      <!-- large screen logo -->
+      <a href="index.html"><img class="navbar-brand d-none d-md-block clearfix" src="images/Logo.svg" alt="Ship Coast To Coast Logo" height="70">
+        <!-- medium screen logo -->
+        <img class="navbar-brand d-none d-sm-block d-md-none clearfix" src="images/Logo--sm.svg" alt="Ship Coast To Coast Logo" height="40">
+        <!-- small screen logo -->
+        <img class="navbar-brand 	d-block d-sm-none clearfix" src="images/Logo--xs.svg" alt="Ship Coast To Coast Logo" height="70">
+      
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse justify-content-center " id="navbar">
-        <!-- Left links -->
-        <ul class="navbar-nav mb-2 mb-lg-0 text-capitalize h-100 align-items-center">
-          <li class="navbar-brand me-5">
-            <a href="index.html"><img class="img-fluid" src="images/Logo.svg" alt="Ship Coast To Coast Logo"
-                height="70"></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item ms-1">
-            <a class="nav-link fw-bold" href="#">car shipping services</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="nav-item ms-1">
-            <a class="nav-link fw-bold" href="#">specialty shipping</a>
-          </li>
-          <li class="nav-item ms-1">
-            <a class="nav-link fw-bold" href="#">auto transport tips</a>
-          </li>
-          <li class="nav-item ms-1">
-            <a class="nav-link fw-bold" href="#">company info</a>
-          </li>
-          <li class="fs-4 nav-phone-number ms-lg-3">
-            <a class="text-decoration-none text-nowrap" href="tel:+62896706255135">866-396-1467</a>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <!-- Left links -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-      <!-- Collapsible wrapper -->
     </div>
-    <!-- Container wrapper -->
   </nav>
+
   <!-- end navigation bar / header -->
 
   <!-- begin landing container for form & tagline -->
   <div class="container-fluid landing-container mb-5">
     <div class="row h-100">
-      <div class="col-sm-6 background-image">
-        <div class="col-sm-12 col-lg-10 container-fluid">
-          <h1 class="display-2 fw-normal">Instantly Get <br>10 Free Auto Transport Quotes</h1>
-          <h2 class="fs-3 fw-normal lh-base">Our network of reliable auto shipping companies are fully licensesd,
+      <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-center background-image">
+        <div class="col-sm-12 col-lg-8  tagline-container">
+          <h1 class="display-3 fw-normal">Instantly Get <br>10 Free Auto <br class="d-sm-none d-md-block">Transport
+            Quotes</h1>
+          <h2 class="fs-4 fw-normal lh-base mt-3">Our network of reliable auto shipping companies are fully licensesd,
             bonded, and insured to protect your investment and give you peace of mind when you ship your car.</h2>
+
         </div>
       </div>
-      <div class="col-sm-6 quote-form">
+      <div class="col-sm-12 col-lg-6 quote-form">
         <div class="col-sm-6 progress-container">
           <strong class="text-uppercase">get your quotes: step <span>1</span>of <span>3</span></strong>
           <div class="col-sm-6 progress-bar">

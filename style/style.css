@@ -8,7 +8,7 @@
   height: 90vh;
 }
 
-.col-sm-6.quote-form {
+.quote-form {
   background: transparent
     linear-gradient(
       144deg,
@@ -24,6 +24,9 @@
   background-image: url("../images/HeaderImage@2x.png");
   background-size: cover;
   background-position: center;
+}
+.tagline-container {
+  max-width: 750px;
 }
 
 /* removing rounded inputs from bootstrap to match design */
