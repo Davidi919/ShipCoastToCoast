@@ -9,7 +9,7 @@
 
 .container-fluid.landing-container {
   color: white;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .quote-form {
@@ -156,6 +156,13 @@ footer .carriersoft-color {
 footer #copywrite-row {
   background-color: #023D4B;
 }
+@media only screen and (max-width: 768px) {
+  img.position-relative.me-2.dashed-line {
+    position: absolute !important;
+  }
+}
+
+
 @media only screen and (max-width: 991px) {
   #navbar-wrapper {
     width: 100% !important;
