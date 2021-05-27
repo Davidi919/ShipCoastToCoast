@@ -160,6 +160,9 @@ footer #copywrite-row {
   img.position-relative.me-2.dashed-line {
     position: absolute !important;
   }
+  #form-container {
+    margin-left: -30px;
+  }
 }
 
 
