@@ -6,6 +6,7 @@
   <!-- Latest Bootstrap Stylesheet Link - v5.0  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- local stylesheet reference -->
   <link href="style/style.css" rel="stylesheet">
   <!-- setting viewport to full scale for mobile -->
@@ -92,7 +93,7 @@
         <div class="col-sm-12 col-lg-8 ms-5 tagline-container">
           <h1 class="display-3 fw-normal">Instantly Get <br>10 Free Auto <br class="d-sm-none d-md-block">Transport
             Quotes</h1>
-          <h2 class="fs-4 fw-normal lh-base mt-3">Our network of reliable auto shipping companies are fully licensesd,
+          <h2 class="fs-4 fw-normal lh-base mt-3">Our network of reliable auto shipping companies are fully licensed,
             bonded, and insured to protect your investment and give you peace of mind when you ship your car.</h2>
 
         </div>
@@ -103,155 +104,210 @@
 
           <!-- carousel container used to create seamless form tranisition -->
 
-          <div id="myCarousel" class="carousel-inner" role="listbox">
-
-            <!-- first form container for pickup, dropoff, and when -->
-            <div class="carousel-item active first-form-container">
-              <div class="col-sm-6 progress-container">
-                <strong class="text-uppercase">get your quotes: step <span>1 </span>of <span>3</span></strong>
-                <div class="col-sm-6">
-                  <div class="d-inline-block">
-                    <img src="images\progress_bar_1-3.svg" alt="">
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-sm-12 container-fluid mx-auto mt-4 mb-5 p-0">
-                <h1 class="display-4 p-0">Tell us where you're going?</h1>
-              </div>
-              <!-- begin form box -->
-
+          <form>
+            <div id="myCarousel" class="carousel-inner" role="listbox">
               <!-- first form container for pickup, dropoff, and when -->
-
-              <!-- pickup location forms -->
-              <div class="row">
-                <div class="fluid-container input-title-container">
-                  <img src="images/Icons/location.svg" width="21px" height="auto" alt="" class="me-2">
-                  <span class="fs-5">Pickup Location</span>
-                </div>
-                <div
-                  class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
-                  <img src="images/Icons/input-dash-line.svg" width="auto" height="120px" alt=""
-                    class="position-relative me-2 dashed-line">
-                  <input type="city" class="form-control ms-3 mt-1" placeholder="City, State" aria-label="city">
-                  <span class="fw-bold mx-auto mx-md-3 mt-1 pt-2 text-uppercase " id="or-divider">or</span>
-                  <input type="text" class="form-control mt-1 ms-3 ms-md-0" placeholder="Zip Code"
-                    aria-label="Zip Code">
-                </div>
-              </div>
-              <!-- end of pickup location input -->
-              <!-- pickup location forms -->
-              <div class="row">
-                <div class="fluid-container input-title-container">
-                  <img src="images/Icons/location.svg" width="21px" height="auto" alt="" class="me-2">
-                  <span class="fs-5">Dropoff Location</span>
-                </div>
-                <div
-                  class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
-                  <img src="images/Icons/input-dash-line.svg" width="auto" height="120px" alt=""
-                    class="position-relative me-2 dashed-line">
-                  <input type="city" class="form-control ms-3 mt-1" placeholder="City, State" aria-label="city">
-                  <span class="fw-bold mx-auto mx-md-3 mt-1 pt-2 text-uppercase " id="or-divider">or</span>
-                  <input type="text" class="form-control mt-1 ms-3 ms-md-0" placeholder="Zip Code"
-                    aria-label="Zip Code">
-                </div>
-              </div>
-              <!-- end of pickup location input -->
-              <!-- pickup location forms -->
-              <div class="row">
-                <div class="fluid-container input-title-container">
-                  <img src="images/Icons/clock.svg" width="21px" height="auto" alt="" class="me-2">
-                  <span class="fs-5">When</span>
-                </div>
-                <div
-                  class="col-10 col-xxl-4 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
-
-                  <input type="date" class="form-control ms-3 mt-1" placeholder="date" aria-label="date">
-
-                </div>
-              </div>
-              <!-- end of pickup location input -->
-
-
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide="next"
-                class="btn btn-primary btn-lg mt-5 ms-0">Continue</button>
-            </div>
-            <!-- end of first form container for pickup, dropoff, and when -->
-
-            <!-- 2nd form container for vehicle info -->
-            <div class="carousel-item second-form-container">
-              <div class="col-sm-6 progress-container">
-                <strong class="text-uppercase">get your quotes: step <span>2 </span>of <span>3</span></strong>
-                <div class="col-sm-6">
-                  <div class="d-inline-block">
-                    <img src="images\progress_bar_2-3.svg" alt="">
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-sm-12 container-fluid mx-auto mt-4 mb-5 p-0">
-                <h1 class="display-4 p-0">What kind of vehicle are you shipping?</h1>
-              </div>
-              <!-- begin input container -->
-              <div class="row mb-2">
-                <div class="fluid-container input-title-container">
-                  <span class="fs-5">Vehicle Details</span>
-                </div>
-                <div
-                  class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
-                  <!-- import javascript for year, make, and model selector -->
-                  <script src="javascript/yearMakeModel.js"></script>
-
-                  <div class="dynamic-dropdown w-100">
-                    <form>
-                      <select class="form-select mb-3 w-75" name="optone" id="makeSel" size="1">
-                        <option value="" selected="selected">Make</option>
-                      </select>
-                      <select class="form-select mb-3 w-75" name="opttwo" id="modelSel" size="1">
-                        <option value="" selected="selected">Model</option>
-                      </select>
-                      <select class="form-select mb-3 w-50" name="optthree" id="yearSel" size="1">
-                        <option value="" selected="selected">Year</option>
-                      </select>
-                    </form>
-                  </div>
-
-
-                </div>
-                <div class="wrapper row container-fluid d-flex-row m-0 mt-4">
-                  <div class=" row fluid-container input-title-container">
-                    <span class="fs-5">Is your vehicle running?</span>
-                  </div>
-                  <div class="check-wrapper mt-2">
-                    <div class="form-check form-check-inline mb-2 mb-md-0">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                      <label class="form-check-label fs-5 fw-normal ms-2 mt-2" for="inlineRadio1">Yes</label>
-                    </div>
-                    <div class="form-check form-check-inline mb-2">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                      <label class="form-check-label fs-5 fw-normal ms-2 mt-2" for="inlineRadio2">No</label>
+              <div class="carousel-item active first-form-container">
+                <div class="col-sm-6 progress-container">
+                  <strong class="text-uppercase">get your quotes: step <span>1 </span>of <span>3</span></strong>
+                  <div class="col-sm-6">
+                    <div class="d-inline-block">
+                      <img src="images\progress_bar_1-3.svg" alt="">
                     </div>
                   </div>
+
                 </div>
-                
+                <div class="col-sm-12 col-md-8 container-fluid mt-4 mb-5 ms-0 p-0">
+                  <h1 class="display-4 p-0">Tell us where you're going?</h1>
+                </div>
+                <!-- begin form box -->
+
+                <!-- first form container for pickup, dropoff, and when -->
+
+                <!-- pickup location forms -->
+                <div class="row">
+                  <div class="fluid-container input-title-container">
+                    <img src="images/Icons/location.svg" width="21px" height="auto" alt="" class="me-2">
+                    <span class="fs-5">Pickup Location</span>
+                  </div>
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+                    <img src="images/Icons/input-dash-line.svg" width="auto" height="120px" alt=""
+                      class="position-relative me-2 dashed-line">
+                    <input type="city" class="form-control ms-3 mt-1" placeholder="City, State" aria-label="city">
+                    <span class="fw-bold mx-auto mx-md-3 mt-1 pt-2 text-uppercase " id="or-divider">or</span>
+                    <input type="text" class="form-control mt-1 ms-3 ms-md-0" placeholder="Zip Code"
+                      aria-label="Zip Code">
+                  </div>
+                </div>
+                <!-- end of pickup location input -->
+                <!-- pickup location forms -->
+                <div class="row">
+                  <div class="fluid-container input-title-container">
+                    <img src="images/Icons/location.svg" width="21px" height="auto" alt="" class="me-2">
+                    <span class="fs-5">Dropoff Location</span>
+                  </div>
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+                    <img src="images/Icons/input-dash-line.svg" width="auto" height="120px" alt=""
+                      class="position-relative me-2 dashed-line">
+                    <input type="city" class="form-control ms-3 mt-1" placeholder="City, State" aria-label="city">
+                    <span class="fw-bold mx-auto mx-md-3 mt-1 pt-2 text-uppercase " id="or-divider">or</span>
+                    <input type="text" class="form-control mt-1 ms-3 ms-md-0" placeholder="Zip Code"
+                      aria-label="Zip Code">
+                  </div>
+                </div>
+                <!-- end of pickup location input -->
+                <!-- pickup location forms -->
+                <div class="row">
+                  <div class="fluid-container input-title-container">
+                    <img src="images/Icons/clock.svg" width="21px" height="auto" alt="" class="me-2">
+                    <span class="fs-5">When</span>
+                  </div>
+                  <div
+                    class="col-10 col-xxl-4 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+
+                    <input type="date" class="form-control ms-4 mt-1" placeholder="date" aria-label="date">
+
+                  </div>
+                </div>
+                <!-- end of pickup location input -->
+
+
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide="next"
+                  class="btn btn-primary btn-lg mt-5 ms-0">Continue</button>
               </div>
+              <!-- end of first form container for pickup, dropoff, and when -->
 
-              <!-- removed "next" from data-bs-slide value while next section is WIP -->
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide=""
-                class="btn btn-primary btn-lg mt-5 ms-0 mb-3">Continue</button>
+              <!-- 2nd form container for vehicle info -->
+              <div class="carousel-item second-form-container">
+                <div class="col-sm-6 progress-container">
+                  <strong class="text-uppercase">get your quotes: step <span>2 </span>of <span>3</span></strong>
+                  <div class="col-sm-6">
+                    <div class="d-inline-block">
+                      <img src="images\progress_bar_2-3.svg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-sm-12 col-md-8 container-fluid mt-4 mb-5 ms-0 p-0">
+                  <h1 class="display-4 p-0">What kind of vehicle are you shipping?</h1>
+                </div>
+                <!-- begin input container -->
+                <div class="row mb-2">
+                  <div class="fluid-container input-title-container">
+                    <span class="fs-5">Vehicle Details</span>
+                  </div>
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+                    <!-- import javascript for year, make, and model selector -->
+                    <script src="javascript/yearMakeModel.js"></script>
+
+                    <div class="dynamic-dropdown w-100">
+                      <form>
+                        <select class="form-select mb-3 w-75" name="optone" id="makeSel" size="1">
+                          <option value="" selected="selected">Make</option>
+                        </select>
+                        <select class="form-select mb-3 w-75" name="opttwo" id="modelSel" size="1">
+                          <option value="" selected="selected">Model</option>
+                        </select>
+                        <select class="form-select mb-3 w-50" name="optthree" id="yearSel" size="1">
+                          <option value="" selected="selected">Year</option>
+                        </select>
+                      </form>
+                    </div>
+
+
+                  </div>
+                  <div class="wrapper row container-fluid d-flex-row m-0 mt-4">
+                    <div class=" row fluid-container input-title-container">
+                      <span class="fs-5">Is your vehicle running?</span>
+                    </div>
+                    <div class="check-wrapper mt-2">
+                      <div class="form-check form-check-inline mb-2 mb-md-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                          value="option1">
+                        <label class="form-check-label fs-5 fw-normal ms-2 mt-2" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline mb-2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                          value="option2">
+                        <label class="form-check-label fs-5 fw-normal ms-2 mt-2" for="inlineRadio2">No</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide="next"
+                  class="btn btn-primary btn-lg mt-5 ms-0 mb-3">Continue</button>
+              </div>
+              <!-- end of 2nd form container for vehicle details -->
+
+
+              <!-- 3rd form container for contact details -->
+              <div class="carousel-item third-form-container">
+                <div class="col-sm-6 progress-container">
+                  <strong class="text-uppercase">get your quotes: step <span>3 </span>of <span>3</span></strong>
+                  <div class="col-sm-6">
+                    <div class="d-inline-block">
+                      <img src="images\progress_bar_3-3.svg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-sm-12 col-md-8 container-fluid mt-4 mb-5 ms-0 p-0">
+                  <h1 class="display-4 p-0">What's the best way to reach you?</h1>
+                </div>
+
+
+
+
+                <div class="row">
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+                    <input type="name" class="form-control mt-1" placeholder="Full Name" aria-label="name" required>
+                    <input type="tel" class="form-control mt-3 mt-md-1 ms-0 ms-md-3" placeholder="Phone Number" aria-label="telephone" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+                    <input type="email" class="form-control mt-1" placeholder="Email Address" aria-label="email" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-1 mt-md-2 mb-2 mb-md-auto icon-offset-margin">
+                    <input type="email" class="form-control mt-1" placeholder="Confirm Email Address"
+                      aria-label="email" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div
+                    class="col-12 col-xxl-7 d-flex flex-column flex-md-row align-items-start mt-3 mb-2 mb-md-auto icon-offset-margin">
+                    <textarea class="form-control" rows="3" placeholder="Comments"></textarea>
+                  </div>
+                </div>
+                <div class="form-check mt-3">
+                  <input class="form-check-input me-1 me-md-0" type="checkbox" value="" id="householdMoving">
+                  <label class="form-check-label d-block d-sm-inline-block ms-4 ms-md-2" for="householdMoving">
+                    I am also interested in household moving.
+                  </label>
+                </div>
+                <!-- Google reCAPTCHA v2 container. Please note a site key is needed by the website administrator -->
+                <div class="g-recaptcha mt-5" data-sitekey="your_site_key"></div>
+
+
+
+
+                <button type="submit" class="btn btn-primary btn-lg mt-5 ms-0">Submit</button>
+              </div>
             </div>
-            <!-- end of 2nd form container for vehicle details -->
-
-
-            <!-- 3rd form container for contact details -->
-            
-            
-
-          </div>
-
-
+          </form>
         </div>
       </div>
     </div>
@@ -387,7 +443,7 @@
         </li>
       </ul>
     </div>
-    <div class="row container-fulid p-3 text-sm-center text-xl-start" id="copywrite-row">
+    <div class="row container-fulid p-3 text-center text-lg-start" id="copywrite-row">
       <span class="container col-10">© 2021 All rights reserved</span>
     </div>
   </footer>

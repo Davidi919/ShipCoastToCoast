@@ -49,10 +49,14 @@
 }
 
 /* removing rounded inputs from bootstrap to match design */
-.first-form-container .form-control, .second-form-container .dynamic-dropdown .form-select {
+.first-form-container input, .second-form-container .dynamic-dropdown .form-select, .third-form-container input, .third-form-container textarea {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
+}
+
+.third-form-container .form-check label {
+  margin-top: .75rem;
 }
 
 .btn {
