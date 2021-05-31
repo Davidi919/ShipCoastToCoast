@@ -1,6 +1,7 @@
 html {
   min-width: 100%;
   min-height: 100%;
+  position: relative;
 }
 
 .navbar-light .navbar-nav .nav-telephone-link {
