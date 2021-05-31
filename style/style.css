@@ -187,6 +187,12 @@ footer #copywrite-row {
 
 /* begin custom responsive styling */
 @media only screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  #myCarousel {
+    position: relative;
+  }
   .icon-offset-margin {
     position: relative;
   }
