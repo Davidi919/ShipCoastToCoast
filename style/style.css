@@ -1,8 +1,4 @@
-html {
-  min-width: 100%;
-  min-height: 100%;
-  position: relative;
-}
+
 
 .navbar-light .navbar-nav .nav-telephone-link {
   color: #27aae1;
@@ -16,7 +12,7 @@ html {
 }
 
 .quote-form {
-  position: relative;
+  
   background: transparent linear-gradient(144deg, #8dc63f 0%, #27aae1 100%) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(144deg, hsl(85, 40%, 51%) 0%, #27aae1 100%) 0% 0% no-repeat padding-box;
 }
@@ -45,6 +41,7 @@ html {
 
 .first-form-container .icon-offset-margin {
   /* offset made to equal half of the "pickup icon" and half of the dashed line*/
+  position: relative;
   margin-left: calc(21px / 2 - 1.5px);
 }
 
