@@ -1,3 +1,8 @@
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .navbar-light .navbar-nav .nav-telephone-link {
   color: #27aae1;
 }
