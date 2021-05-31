@@ -7,19 +7,11 @@
 
 .container-fluid.landing-container {
   color: white;
-  /* height: 90vh; */
 }
 
 .quote-form {
-  background: transparent
-    linear-gradient(
-      144deg,
-      #8dc63f 0%,
-      #27aae1 100%
-    )
-    0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(144deg, hsl(85, 40%, 51%) 0%, #27aae1 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent linear-gradient(144deg, #8dc63f 0%, #27aae1 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(144deg, hsl(85, 40%, 51%) 0%, #27aae1 100%) 0% 0% no-repeat padding-box;
 }
 
 .background-image {
@@ -28,6 +20,7 @@
   background-position: center;
 }
 .tagline-container {
+  /* max width added for xxl screens */
   max-width: 750px;
 }
 
@@ -48,15 +41,18 @@
   margin-left: calc(21px / 2 - 1.5px);
 }
 
-/* removing rounded inputs from bootstrap to match design */
-.first-form-container input, .second-form-container .dynamic-dropdown .form-select, .third-form-container input, .third-form-container textarea {
+/* removing rounded inputs from bootstrap 5 to match design styles from XD file */
+.first-form-container input,
+.second-form-container .dynamic-dropdown .form-select,
+.third-form-container input,
+.third-form-container textarea {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
 }
 
 .third-form-container .form-check label {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 .btn {
@@ -73,19 +69,20 @@
   background-color: #045e73;
 }
 
-input[type=radio] {
+/* the following styles are to help match radio and checkbox inputs to match the XD files */
+input[type="radio"] {
   border-radius: 0 !important;
   padding: 0.5em;
   -webkit-appearance: none;
 }
 
-input[type=radio]:checked {
-  background-color:#045e73;
+input[type="radio"]:checked {
+  background-color: #045e73;
   background-size: 0px;
   color: #045e73;
 }
 
-input[type=radio]:focus {
+input[type="radio"]:focus {
   outline-color: transparent;
 }
 
@@ -116,6 +113,7 @@ input.form-check-input {
   padding-left: 0;
 }
 .services-descriptions .list-group-flush li {
+  /* removing the borders from bootstrap */
   border: none;
 }
 
@@ -135,6 +133,7 @@ input.form-check-input {
   background-color: #f8f8f8;
 }
 .services-list a:hover {
+  /* added underline to help better see links in the services containers */
   text-decoration: underline;
 }
 
@@ -169,6 +168,7 @@ footer a:hover {
   text-decoration: none;
 }
 footer a:hover {
+  /* added underline to help better see links in the footer container */
   text-decoration: underline;
 }
 footer .carriersoft-color {
@@ -180,8 +180,11 @@ footer #copywrite-row {
 #copywrite-row span {
   max-width: 1296px;
 }
+
+/* begin custom responsive styling */
 @media only screen and (max-width: 768px) {
   img.position-relative.me-2.dashed-line {
+    /* taking the dashed line out of the document flow for smaller screens */
     position: absolute !important;
   }
   #form-container {
@@ -202,6 +205,7 @@ footer #copywrite-row {
 
 @media only screen and (max-width: 991px) {
   #navbar-wrapper {
+    /* adjusting non-mobile navbar to stay centered */
     width: 100% !important;
     justify-content: space-between !important;
   }
