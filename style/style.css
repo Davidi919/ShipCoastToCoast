@@ -18,10 +18,16 @@
 }
 
 .background-image {
-  background-image: url("../images/HeaderImage-min.png");
+  
+  background: url("../images/HeaderImage-min.png") #203448;
   background-size: cover;
   background-position: center;
+
 }
+
+
+
+
 .tagline-container {
   /* max width added for xxl screens */
   max-width: 750px;
