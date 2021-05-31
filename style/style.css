@@ -187,15 +187,7 @@ footer #copywrite-row {
 
 /* begin custom responsive styling */
 @media only screen and (max-width: 768px) {
-  body {
-    position: relative !important;
-  }
-  #myCarousel {
-    position: relative !important;
-  }
-  .icon-offset-margin {
-    position: relative !important;
-  }
+
   img.position-relative.me-2.dashed-line {
     /* taking the dashed line out of the document flow for smaller screens */
     position: absolute !important;
