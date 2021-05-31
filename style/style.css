@@ -16,6 +16,7 @@ html {
 }
 
 .quote-form {
+  position: relative;
   background: transparent linear-gradient(144deg, #8dc63f 0%, #27aae1 100%) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(144deg, hsl(85, 40%, 51%) 0%, #27aae1 100%) 0% 0% no-repeat padding-box;
 }
